@@ -2,11 +2,23 @@ Docker-Simpel
 ============
 
 
-Simpler host management
+Simpler host management  
 
 
-Config dir: `~/.docker/machine/machines/<host>`
-Config files stores the relevant env variables
+Config dir: `~/.docker/machine/machines/<host>`  
+Config files stores the relevant env variables  
+
+```
+λ fox@hackbook trinity » pwd
+/home/fox/.docker/machine/machines/example
+λ fox@hackbook trinity » ls
+ca.pem  cert.pem  config  key.pem
+λ fox@hackbook trinity » cat config 
+export DOCKER_CERT_PATH=~/.docker/machine/machines/example/
+export DOCKER_HOST=tcp://docker.example.org:2375 
+export DOCKER_TLS_VERIFY=1
+```
+
 
 
 Todo:
