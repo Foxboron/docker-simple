@@ -5,22 +5,26 @@ Docker-Simpel
 Simpler host management
 
 
-Config dir: `~/.docker/simpel/<host>`
-stores the needed args for host tcp conn and certs
+Config dir: `~/.docker/machine/machines/<host>`
+Config files stores the relevant env variables
 
 
 Todo:
 local conf: `.../service/.docker-host`
 auto-remember docker-compose hosts
 `alias docker-compose="ds dc"`
+create
 
 
 ```
 ds list
-ds <host> activate
+ds activate <host>
 ds deactivate
 ds create
 ```
+
+[![asciicast](https://asciinema.org/a/dbyyk9ixjrjbmuzxc30it1p2c.png)](https://asciinema.org/a/dbyyk9ixjrjbmuzxc30it1p2c)
+
 
 
 
