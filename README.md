@@ -32,6 +32,7 @@ create
 ds list
 ds activate <host>
 ds deactivate
+ds run <cmd>
 ds create
 ```
 
