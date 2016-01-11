@@ -1,4 +1,4 @@
-Docker-Simpel
+Docker-Simple
 ============
 
 
@@ -21,10 +21,10 @@ export DOCKER_TLS_VERIFY=1
 
 
 
-Todo:
-local conf: `.../service/.docker-host`
-auto-remember docker-compose hosts
-`alias docker-compose="ds dc"`
+Todo: 
+local conf: `.../service/.docker-host` 
+auto-remember docker-compose hosts 
+`alias docker-compose="ds dc"` 
 create
 
 
