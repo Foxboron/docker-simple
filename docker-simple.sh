@@ -24,6 +24,7 @@ docker_run(){
 
 use-env(){
     eval $(cat $confdir/$1/config)
+    DOCKER_CURRENT=$1
 }
 
 list-docker(){
@@ -34,6 +35,10 @@ clear-env(){
     unset DOCKER_CERT_PATH
     unset DOCKER_HOST
     unset DOCKER_TLS_VERIFY
+}
+
+get-current(){
+    if [ -z "$DOCKER_CURRENT" ]; then echo "No active env"; else echo $DOCKER_CURRENT; fi
 }
 
  case $1 in
@@ -50,7 +55,9 @@ clear-env(){
  activate)
      use-env $2
      ;;
-
+ current)
+     get-current
+     ;;
  deactivate)
      clear-env
      ;;

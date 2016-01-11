@@ -25,7 +25,8 @@ Todo:
 local conf: `.../service/.docker-host` 
 auto-remember docker-compose hosts 
 `alias docker-compose="ds dc"` 
-create
+create 
+Needs a better name 
 
 
 ```
@@ -34,6 +35,7 @@ ds activate <host>
 ds deactivate
 ds run <cmd>
 ds create
+ds current
 ```
 
 [![asciicast](https://asciinema.org/a/dbyyk9ixjrjbmuzxc30it1p2c.png)](https://asciinema.org/a/dbyyk9ixjrjbmuzxc30it1p2c)
