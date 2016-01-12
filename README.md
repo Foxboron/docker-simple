@@ -4,6 +4,8 @@ Docker-Simple
 
 Simpler host management  
 
+Install:
+`source docker-simple.sh`
 
 Config dir: `~/.docker/machine/machines/<host>`  
 Config files stores the relevant env variables  
@@ -23,12 +25,12 @@ export DOCKER_TLS_VERIFY=1
 
 Todo: 
 local conf: `.../service/.docker-host` 
-auto-remember docker-compose hosts 
-`alias docker-compose="ds dc"` 
-create 
-Needs a better name 
-
-
+auto-remember docker-compose hosts  
+`alias docker-compose="ds dc"`  
+create   
+Needs a better name   
+  
+  
 ```
 ds list
 ds activate <host>
